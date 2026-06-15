@@ -1,56 +1,104 @@
-# Career Guidance MERN Starter (Email/Password + Google OAuth)
+# Web-Based Career Selection and Education Guidance System
 
-This is a full MERN-stack starter that includes:
-- **Backend**: Node.js + Express + MongoDB (Mongoose)
-- **Auth**: Email/Password (JWT) + **Google OAuth 2.0** (Passport)
-- **Frontend**: React (Vite) with **Register** and **Login** pages including Google Sign-In
+A full-stack MERN web application developed for Sri Lankan school leavers to support career selection and educational planning after G.C.E. O/L and A/L examinations.
 
-## 1) Prerequisites
-- Node.js 18+
-- MongoDB (local or Atlas)
-- Google Cloud OAuth Client (Web application)
+## Team Members
 
-## 2) Setup
+| Name                     | Student ID |
+| ------------------------ | ---------- |
+| Mariyappan Thamilpiriyan | IT23296800 |
+| Kamshiga Ganesan         | IT24101365 |
+| Naguleswaran Mathuppriya | IT24102099 |
+| Sithirasenan Vipooshan   | IT24102869 |
+| Moosika Ramanathan       | IT24102839 |
+
+## Project Overview
+
+The system helps students:
+
+* Explore career opportunities
+* Take career assessment quizzes
+* Check university eligibility using Z-Score data
+* Compare career pathways
+* Discover alternative education options
+* View jobs and internship opportunities
+
+## Features
+
+### Career Assessment Module
+
+* Interest and skill-based quizzes
+* Personalized career recommendations
+* Career match scoring
+
+### Qualification & Eligibility Analyzer
+
+* Z-Score eligibility checking
+* Degree program recommendations
+* Historical cutoff analysis
+
+### Career Path Explorer
+
+* Career information database
+* Salary and demand insights
+* Career comparison tools
+
+### Alternative Pathway Recommender
+
+* Alternative education suggestions
+* Diploma and vocational pathways
+* Pathway comparison system
+
+### Admin & Job Management System
+
+* Career management
+* Course management
+* User management
+* Job and internship management
+
+## Technology Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* JavaScript
 
 ### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+### Authentication
+
+* JWT Authentication
+* Google OAuth
+
+## Installation
+
+### Backend
+
 ```bash
 cd server
-cp .env.example .env
 npm install
 npm run dev
 ```
 
 ### Frontend
+
 ```bash
 cd client
-cp .env.example .env
 npm install
 npm run dev
 ```
 
-## 3) Environment variables
+## Academic Project
 
-### server/.env
-- `MONGO_URI` - MongoDB connection string
-- `JWT_SECRET` - random secret for JWT signing
-- `GOOGLE_CLIENT_ID` - Google OAuth client id
-- `GOOGLE_CLIENT_SECRET` - Google OAuth client secret
-- `GOOGLE_CALLBACK_URL` - e.g. http://localhost:5000/auth/google/callback
-- `CLIENT_URL` - e.g. http://localhost:5173
+Developed for the IT2150 – IT Project module at Sri Lanka Institute of Information Technology (SLIIT).
 
-### client/.env
-- `VITE_API_URL` - e.g. http://localhost:5000
-
-## 4) How Google Login works (dev-friendly)
-- In the React Login/Register pages, the **Continue with Google** button redirects the browser to:
-  `http://localhost:5000/auth/google`
-- After Google approves, the backend creates/links a user, issues a JWT, then redirects to:
-  `http://localhost:5173/oauth-success?token=...`
-- The frontend reads the token, stores it in `localStorage`, and routes to `/dashboard`.
-
-## 5) Notes
-- This starter is intentionally simple; for production, consider:
-  - rotating refresh tokens
-  - httpOnly cookies instead of localStorage
-  - stricter CORS, rate limiting, CSRF protections
-  - email verification and password reset flows
+Year 02 Semester 02 – 2026
