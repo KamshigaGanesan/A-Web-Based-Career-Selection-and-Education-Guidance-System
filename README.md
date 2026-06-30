@@ -2,6 +2,12 @@
 
 A full-stack MERN web application developed for Sri Lankan school leavers to support career selection and educational planning after G.C.E. O/L and A/L examinations.
 
+## 📄 Project Documentation
+
+The complete academic project report includes the project background, system analysis, requirements, system design, architecture, database design, implementation, testing, user interface screenshots, and conclusion.
+
+📄 **Final Project Report:** [View Report](FinalReport.pdf)
+
 ## Team Project Information
 
 This project was developed as part of the IT2150 – IT Project module at Sri Lanka Institute of Information Technology (SLIIT).
