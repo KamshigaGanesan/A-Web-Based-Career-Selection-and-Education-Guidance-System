@@ -6,7 +6,7 @@ A full-stack MERN web application developed for Sri Lankan school leavers to sup
 
 The complete academic project report includes the project background, system analysis, requirements, system design, architecture, database design, implementation, testing, user interface screenshots, and conclusion.
 
-📄 **Final Project Report:** [View Report](FinalReport.pdf)
+📄 **Final Project Report:** [View Report](Final%20Report.pdf)
 
 ## Team Project Information
 
